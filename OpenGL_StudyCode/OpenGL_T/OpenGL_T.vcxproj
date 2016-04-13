@@ -78,11 +78,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DrawLine.h" />
+    <ClInclude Include="DrawPoint.h" />
+    <ClInclude Include="DrawPolygon.h" />
+    <ClInclude Include="DrawPolygonStipple.h" />
+    <ClInclude Include="DrawPolygonWithEdgeFlag.h" />
+    <ClInclude Include="DrawVertex.h" />
     <ClInclude Include="LoadShaders.h" />
+    <ClInclude Include="RunWithAnimation.h" />
+    <ClInclude Include="StatusManage.h" />
+    <ClInclude Include="TestHeads.h" />
+    <ClInclude Include="TestTemplate.h" />
+    <ClInclude Include="triangles.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LoadShaders.cpp" />
-    <ClCompile Include="triangles.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="triangles.frag" />

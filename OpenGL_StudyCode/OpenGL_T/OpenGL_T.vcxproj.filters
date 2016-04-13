@@ -18,12 +18,45 @@
     <ClInclude Include="LoadShaders.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="triangles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RunWithAnimation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawVertex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusManage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestHeads.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawLine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPolygon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPolygonStipple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPolygonWithEdgeFlag.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="triangles.cpp">
+    <ClCompile Include="LoadShaders.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LoadShaders.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
