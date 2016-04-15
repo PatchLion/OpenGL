@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{ba5e77e8-c418-4dcc-9758-81f76d2f9ad3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadShaders.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="triangles.frag">
+      <Filter>资源文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="triangles.vert">
+      <Filter>资源文件</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawPolygon.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPolygonStipple.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPolygonWithEdgeFlag.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawVertex.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadShaders.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixTest.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="RunWithAnimation.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusManage.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="TestTemplate.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="triangles.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawLine.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPoint.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="TestHeads.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Color3DObject.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
