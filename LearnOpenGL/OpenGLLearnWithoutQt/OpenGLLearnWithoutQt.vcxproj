@@ -158,6 +158,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DrawIcosahedron.cpp" />
+    <ClCompile Include="LearnOpenGLBase.cpp" />
     <ClCompile Include="LoadShaders.cpp" />
     <ClCompile Include="main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -230,20 +232,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color3DObject.h" />
+    <ClInclude Include="DrawIcosahedron.h" />
     <ClInclude Include="DrawLine.h" />
     <ClInclude Include="DrawPoint.h" />
     <ClInclude Include="DrawPolygon.h" />
     <ClInclude Include="DrawPolygonStipple.h" />
     <ClInclude Include="DrawPolygonWithEdgeFlag.h" />
     <ClInclude Include="DrawVertex.h" />
+    <ClInclude Include="LearnOpenGLBase.h" />
     <ClInclude Include="LoadShaders.h" />
+    <ClInclude Include="macors.h" />
     <ClInclude Include="MatrixTest.h" />
     <ClInclude Include="RunWithAnimation.h" />
     <ClInclude Include="StatusManage.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TestHeads.h" />
-    <ClInclude Include="TestTemplate.h" />
     <ClInclude Include="triangles.h" />
+    <ClInclude Include="VertexArrayTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

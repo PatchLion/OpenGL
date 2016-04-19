@@ -24,6 +24,12 @@
     <ClCompile Include="LoadShaders.cpp">
       <Filter>OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="DrawIcosahedron.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnOpenGLBase.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -58,9 +64,6 @@
     <ClInclude Include="StatusManage.h">
       <Filter>OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="TestTemplate.h">
-      <Filter>OpenGL</Filter>
-    </ClInclude>
     <ClInclude Include="triangles.h">
       <Filter>OpenGL</Filter>
     </ClInclude>
@@ -78,6 +81,18 @@
     </ClInclude>
     <ClInclude Include="Color3DObject.h">
       <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArrayTest.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawIcosahedron.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="macors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LearnOpenGLBase.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
