@@ -16,6 +16,9 @@
     <Filter Include="OpenGL">
       <UniqueIdentifier>{ba5e77e8-c418-4dcc-9758-81f76d2f9ad3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="classes">
+      <UniqueIdentifier>{99193b6b-b905-42fd-a772-48cd5ea9ceab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,11 +27,11 @@
     <ClCompile Include="LoadShaders.cpp">
       <Filter>OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="DrawIcosahedron.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="LearnOpenGLBase.cpp">
       <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawIcosahedron.cpp">
+      <Filter>classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -85,14 +88,14 @@
     <ClInclude Include="VertexArrayTest.h">
       <Filter>OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="DrawIcosahedron.h">
-      <Filter>OpenGL</Filter>
-    </ClInclude>
     <ClInclude Include="macors.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="LearnOpenGLBase.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawIcosahedron.h">
+      <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

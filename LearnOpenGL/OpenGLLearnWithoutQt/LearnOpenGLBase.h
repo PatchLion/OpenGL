@@ -20,19 +20,6 @@ namespace LearnOpenGL
 	class CLearnOpenGLBase
 	{
 	public:
-		enum OperationType
-		{
-			RotateX,
-			RotateY,
-			RotateZ,
-			ScaleX,
-			ScaleY,
-			ScaleZ,
-			TransX,
-			TransY,
-			TransZ,
-		};
-
 		enum ProjectionType
 		{
 			Perspective,			
@@ -60,6 +47,12 @@ namespace LearnOpenGL
 			CLearnOpenGLBase::current = new T;
 			current->init();
 		}
+
+		//是否显示坐标系
+		bool isShowCoordinates() const  { return m_bShowCoor; }
+		void setShowCoordinates(bool show);
+
+
 	protected:
 		ProjectionType projectionType() const { return m_projectionType; }
 		void changeProjectionType(ProjectionType val);
@@ -74,7 +67,7 @@ namespace LearnOpenGL
 		virtual void mouseEvent(int button, int state, int x, int y){}
 		virtual void mousePressedMoveEvent(int x, int y){}
 		virtual void mouseMoveEvent(int x, int y){}
-		virtual void keyPressedEvent(unsigned char key, int x, int y){}
+		virtual void keyPressedEvent(unsigned char key, int x, int y);
 
 	public:
 		static void s_display();
@@ -87,8 +80,13 @@ namespace LearnOpenGL
 
 	private:
 		static CLearnOpenGLBase* current;
-		int m_currentWidth, m_currentHeight;
+
+		bool							m_bShowCoor;
+		int							m_currentWidth;
+		int							m_currentHeight;
 		ProjectionType			m_projectionType;
+
+		int							m_yAngle;
 	};
 }
 #endif // LearnOpenGLBase_h__
