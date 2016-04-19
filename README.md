@@ -1,4 +1,14 @@
-# OpenGL
-OpenGL test code
+学习OpenGL过程中敲的代码
 
-daixb
+2015-4-20
+分为了带Qt的工程和没有Qt的工程，目前暂时还没有写Qt版的例子代码
+
+为了方便写调试或例子程序，简单封装了一个基类CLearnOpenGLBase，子类只需要完成业务上的绘制就可以了
+1、封装并初始化了OpenGL的一些基本环境
+2、初始化了简单的坐标线（透视、正视、2D），可隐藏坐标线 
+3、初始化了相机位置
+4、增加了一些方便使用的快捷键   
+  "1"-透视    "2"-正视    "3"-2D     "["-绕Y轴左旋    "]"-绕Y轴右旋    "c"-显示隐藏坐标线 "r"-重置旋转角度
+  
+继承CLearnOpenGLBase后实现一个新的子类，如果要切换子类，
+修改TestHeads.h中的宏定义#define CURRENT_CLASS CDrawIcosahedron为新子类的类名就OK
