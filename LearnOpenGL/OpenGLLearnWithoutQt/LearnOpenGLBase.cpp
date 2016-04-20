@@ -120,8 +120,8 @@ void LearnOpenGL::CLearnOpenGLBase::displayEvent()
 	{
 		if (isShowCoordinates())
 		{
-			drawOneLine2fWithColor(-0.8, 0, 0.8, 0, 1.0, 0.0, 0.0);
-			drawOneLine2fWithColor(0, 0.8, 0, -0.8, 0.0, 1.0, 0.0);
+			drawOneLine2fWithColor(-2, 0, 2, 0, 1.0, 0.0, 0.0);
+			drawOneLine2fWithColor(0, 2, 0, -2, 0.0, 1.0, 0.0);
 		}
 	}
 		break;
@@ -150,7 +150,7 @@ void LearnOpenGL::CLearnOpenGLBase::changeProjectionType(ProjectionType val)
 		break;
 	case LearnOpenGL::CLearnOpenGLBase::Ortho2D:
 	{
-		gluOrtho2D(-1, 1, -1, 1);
+		gluOrtho2D(-2, 2, -2, 2);
 	}
 		break;
 	}

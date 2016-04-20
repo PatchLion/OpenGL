@@ -39,6 +39,9 @@
     <ClCompile Include="PrimrestartTest.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="DrawSunAndPlanet.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -107,6 +110,9 @@
       <Filter>OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="PrimrestartTest.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawSunAndPlanet.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

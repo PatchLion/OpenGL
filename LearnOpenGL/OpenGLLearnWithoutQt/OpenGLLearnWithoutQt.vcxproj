@@ -160,6 +160,7 @@
   <ItemGroup>
     <ClCompile Include="DrawIcosahedron.cpp" />
     <ClCompile Include="DrawIcosahedronWithVertexArray.cpp" />
+    <ClCompile Include="DrawSunAndPlanet.cpp" />
     <ClCompile Include="LearnOpenGLBase.cpp" />
     <ClCompile Include="LoadShaders.cpp" />
     <ClCompile Include="main.cpp">
@@ -241,6 +242,7 @@
     <ClInclude Include="DrawPolygon.h" />
     <ClInclude Include="DrawPolygonStipple.h" />
     <ClInclude Include="DrawPolygonWithEdgeFlag.h" />
+    <ClInclude Include="DrawSunAndPlanet.h" />
     <ClInclude Include="DrawVertex.h" />
     <ClInclude Include="Example.h" />
     <ClInclude Include="LearnOpenGLBase.h" />
