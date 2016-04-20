@@ -17,6 +17,7 @@
 #include "VertexArrayTest.h"*/
 #include "LearnOpenGLBase.h"
 #include "DrawIcosahedron.h"
-
-#define CURRENT_CLASS CDrawIcosahedron
+#include "DrawIcosahedronWithVertexArray.h"
+#include "PrimrestartTest.h"
+#define CURRENT_CLASS CPrimrestartTest
 #endif // TestHeads_h__

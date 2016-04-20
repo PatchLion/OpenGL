@@ -2,9 +2,10 @@
 
 #include "TestHeads.h"
 
-
 int main(int argc, char** argv)
 {
+	
+
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 
@@ -40,27 +41,3 @@ int main(int argc, char** argv)
 	glutMainLoop();
 	return 0;
 }
-
-/*
-
-class A
-{
-public:
-
-	friend void callback()  //友元函数作为回调函数 friend方式实现
-	{
-		cout << "回调函数开始执行了！" << endl;
-	}
-};
-void f(void(*p)())
-{
-	p();
-
-}
-int main()
-{
-	void(*p)();
-	p = callback;
-	f(p);
-	return 0;
-}*/

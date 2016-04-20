@@ -1,24 +1,24 @@
 /*********************************************************************************
   * 
   *
-  *FileName:          DrawIcosahedron.h
+  *FileName:          PrimrestartTest.h
   *
   *Author:         	   
   *
   *Date:         	       2016-4-20
   *
-  *Description:		绘制正二十面体
+  *Description:		重启图元测试
 **********************************************************************************/
-#ifndef DrawIcosahedron_h__
-#define DrawIcosahedron_h__
+#ifndef PrimrestartTest_h__
+#define PrimrestartTest_h__
 
 #include "LearnOpenGLBase.h"
 
-class CDrawIcosahedron : public LearnOpenGL::CLearnOpenGLBase
+class CPrimrestartTest : public LearnOpenGL::CLearnOpenGLBase
 {
 public:
-	CDrawIcosahedron();
-	~CDrawIcosahedron(); 
+	CPrimrestartTest();
+	~CPrimrestartTest(); 
 
 public:
 	//初始化
@@ -27,4 +27,4 @@ public:
 protected:
 	virtual void displayEvent();
 };
-#endif // DrawIcosahedron_h__
+#endif // PrimrestartTest_h__

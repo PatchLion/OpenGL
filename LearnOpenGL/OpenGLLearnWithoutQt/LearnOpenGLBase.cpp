@@ -60,7 +60,7 @@ void LearnOpenGL::CLearnOpenGLBase::s_keyPressed(unsigned char key, int x, int y
 }
 
 LearnOpenGL::CLearnOpenGLBase::CLearnOpenGLBase()
-	: m_projectionType(Perspective)
+	: m_projectionType(Ortho)
 	, m_currentWidth(0)
 	, m_currentHeight(0)
 	, m_yAngle(0)
@@ -102,14 +102,14 @@ void LearnOpenGL::CLearnOpenGLBase::displayEvent()
 	case LearnOpenGL::CLearnOpenGLBase::Ortho:
 	{
 
-		gluLookAt(1, 1, 1, 0, 0, 0, 0, 1, 0);
+		gluLookAt(2, 2, 2, 0, 0, 0, 0, 1, 0);
 		glRotatef(m_yAngle, 0, 1, 0);
 
 		if (isShowCoordinates())
 		{
-			drawLine3fWithColor(-1, 0, 0, 1, 0, 0, 1, 0, 0);
-			drawLine3fWithColor(0, -1, 0, 0, 1, 0, 0, 1, 0);
-			drawLine3fWithColor(0, 0, -1, 0, 0, 1, 0, 0, 1);
+			drawLine3fWithColor(-2, 0, 0, 2, 0, 0, 1, 0, 0);
+			drawLine3fWithColor(0, -2, 0, 0, 2, 0, 0, 1, 0);
+			drawLine3fWithColor(0, 0, -2, 0, 0, 2, 0, 0, 1);
 		}
 
 

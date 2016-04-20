@@ -33,6 +33,12 @@
     <ClCompile Include="DrawIcosahedron.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="DrawIcosahedronWithVertexArray.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimrestartTest.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -67,9 +73,6 @@
     <ClInclude Include="StatusManage.h">
       <Filter>OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="triangles.h">
-      <Filter>OpenGL</Filter>
-    </ClInclude>
     <ClInclude Include="DrawLine.h">
       <Filter>OpenGL</Filter>
     </ClInclude>
@@ -95,6 +98,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DrawIcosahedron.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawIcosahedronWithVertexArray.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Example.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimrestartTest.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>
