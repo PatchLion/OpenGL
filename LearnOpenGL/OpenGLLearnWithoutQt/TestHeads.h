@@ -20,5 +20,6 @@
 #include "DrawIcosahedronWithVertexArray.h"
 #include "PrimrestartTest.h"
 #include "DrawSunAndPlanet.h"
-#define CURRENT_CLASS CDrawSunAndPlanet
+#include "BuffersTest.h"
+#define CURRENT_CLASS CBuffersTest
 #endif // TestHeads_h__

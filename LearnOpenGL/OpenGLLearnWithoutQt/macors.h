@@ -26,7 +26,7 @@ glVertex2f(x2, y2);\
 glEnd();
 
 #ifndef BUFFER_OFFSET
-#define BUFFER_OFFSET(offset) ((GLvoid*)offset)
+#define BUFFER_OFFSET(offset) ((GLvoid*)(offset))
 #endif
 
 #endif // macors_h__

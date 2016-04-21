@@ -42,6 +42,9 @@
     <ClCompile Include="DrawSunAndPlanet.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="BuffersTest.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -113,6 +116,9 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="DrawSunAndPlanet.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffersTest.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

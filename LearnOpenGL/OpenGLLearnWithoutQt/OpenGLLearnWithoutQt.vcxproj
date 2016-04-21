@@ -158,6 +158,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BuffersTest.cpp" />
     <ClCompile Include="DrawIcosahedron.cpp" />
     <ClCompile Include="DrawIcosahedronWithVertexArray.cpp" />
     <ClCompile Include="DrawSunAndPlanet.cpp" />
@@ -234,6 +235,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BuffersTest.h" />
     <ClInclude Include="Color3DObject.h" />
     <ClInclude Include="DrawIcosahedron.h" />
     <ClInclude Include="DrawIcosahedronWithVertexArray.h" />
