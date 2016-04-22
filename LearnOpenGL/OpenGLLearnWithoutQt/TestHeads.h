@@ -21,5 +21,6 @@
 #include "PrimrestartTest.h"
 #include "DrawSunAndPlanet.h"
 #include "BuffersTest.h"
-#define CURRENT_CLASS CBuffersTest
+#include "VAO2_81.h"
+#define CURRENT_CLASS CVAO2_81
 #endif // TestHeads_h__

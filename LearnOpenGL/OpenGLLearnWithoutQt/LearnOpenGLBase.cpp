@@ -76,9 +76,11 @@ LearnOpenGL::CLearnOpenGLBase::~CLearnOpenGLBase()
 void LearnOpenGL::CLearnOpenGLBase::init()
 {
 	glClearColor(0.0, 0.0, 0.0, 0.0);
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+
+	glEnable(GL_DEPTH_TEST);
 }
 
 void LearnOpenGL::CLearnOpenGLBase::resizeEvent(int w, int h)
@@ -92,7 +94,7 @@ void LearnOpenGL::CLearnOpenGLBase::resizeEvent(int w, int h)
 void LearnOpenGL::CLearnOpenGLBase::displayEvent()
 {
 	glClearColor(0.0, 0.0, 0.0, 0.0);
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
@@ -135,11 +137,12 @@ void LearnOpenGL::CLearnOpenGLBase::changeProjectionType(ProjectionType val)
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 
+	const double ratio = (double)width() / (double)height();
 	switch (val)
 	{
 	case LearnOpenGL::CLearnOpenGLBase::Perspective:
 	{
-		gluPerspective(120, (double)width() / (double)height(), 1, 10);
+		gluPerspective(120, ratio, 1, 10);
 
 	}
 	break;

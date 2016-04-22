@@ -29,4 +29,12 @@ glEnd();
 #define BUFFER_OFFSET(offset) ((GLvoid*)(offset))
 #endif
 
+#ifndef NumberOf
+#define  NumberOf(array) (sizeof(array)/sizeof(array[0]))
+#endif
+
+#ifndef M_PI
+#define M_PI GL_PI
+#endif
+
 #endif // macors_h__

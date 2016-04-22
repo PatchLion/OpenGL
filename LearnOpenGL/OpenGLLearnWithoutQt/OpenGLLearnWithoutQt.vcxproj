@@ -171,6 +171,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="PrimrestartTest.cpp" />
+    <ClCompile Include="VAO2_81.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -256,6 +257,7 @@
     <ClInclude Include="StatusManage.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TestHeads.h" />
+    <ClInclude Include="VAO2_81.h" />
     <ClInclude Include="VertexArrayTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
