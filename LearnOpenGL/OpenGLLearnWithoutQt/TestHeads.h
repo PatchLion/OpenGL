@@ -22,5 +22,8 @@
 #include "DrawSunAndPlanet.h"
 #include "BuffersTest.h"
 #include "VAO2_81.h"
-#define CURRENT_CLASS CVAO2_81
+#include "DrawIcosahedronEx.h"
+
+
+#define CURRENT_CLASS CDrawIcosahedronEx
 #endif // TestHeads_h__

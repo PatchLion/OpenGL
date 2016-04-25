@@ -159,7 +159,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BuffersTest.cpp" />
+    <ClCompile Include="DrawCircle.cpp" />
     <ClCompile Include="DrawIcosahedron.cpp" />
+    <ClCompile Include="DrawIcosahedronEx.cpp" />
     <ClCompile Include="DrawIcosahedronWithVertexArray.cpp" />
     <ClCompile Include="DrawSunAndPlanet.cpp" />
     <ClCompile Include="LearnOpenGLBase.cpp" />
@@ -238,7 +240,9 @@
   <ItemGroup>
     <ClInclude Include="BuffersTest.h" />
     <ClInclude Include="Color3DObject.h" />
+    <ClInclude Include="DrawCircle.h" />
     <ClInclude Include="DrawIcosahedron.h" />
+    <ClInclude Include="DrawIcosahedronEx.h" />
     <ClInclude Include="DrawIcosahedronWithVertexArray.h" />
     <ClInclude Include="DrawLine.h" />
     <ClInclude Include="DrawPoint.h" />

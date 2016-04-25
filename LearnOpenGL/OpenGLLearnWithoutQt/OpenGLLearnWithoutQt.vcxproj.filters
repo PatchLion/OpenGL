@@ -48,6 +48,12 @@
     <ClCompile Include="VAO2_81.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="DrawIcosahedronEx.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCircle.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -125,6 +131,12 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="VAO2_81.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawIcosahedronEx.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCircle.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>
