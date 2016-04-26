@@ -54,6 +54,12 @@
     <ClCompile Include="DrawCircle.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="DrawCilp3_5.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawChangeGroup.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -137,6 +143,12 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="DrawCircle.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCilp3_5.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawChangeGroup.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

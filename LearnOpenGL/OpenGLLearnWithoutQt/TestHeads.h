@@ -23,7 +23,7 @@
 #include "BuffersTest.h"
 #include "VAO2_81.h"
 #include "DrawIcosahedronEx.h"
-
-
-#define CURRENT_CLASS CDrawIcosahedronEx
+#include "DrawCilp3_5.h"
+#include "DrawChangeGroup.h"
+#define CURRENT_CLASS CDrawChangeGroup
 #endif // TestHeads_h__

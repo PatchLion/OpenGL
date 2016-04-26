@@ -142,13 +142,13 @@ void LearnOpenGL::CLearnOpenGLBase::changeProjectionType(ProjectionType val)
 	{
 	case LearnOpenGL::CLearnOpenGLBase::Perspective:
 	{
-		gluPerspective(120, ratio, 1, 10);
+		gluPerspective(90, ratio, 1, 10);
 
 	}
 	break;
 	case LearnOpenGL::CLearnOpenGLBase::Ortho:
 	{
-		glOrtho(-2, 2, -2, 2, 1, 5);
+		glOrtho(-2, 2, -2, 2, 1, 10);
 	}
 		break;
 	case LearnOpenGL::CLearnOpenGLBase::Ortho2D:
@@ -202,4 +202,12 @@ void LearnOpenGL::CLearnOpenGLBase::setShowCoordinates(bool show)
 {
 	m_bShowCoor = show;
 	glutPostRedisplay();
+}
+
+double LearnOpenGL::CLearnOpenGLBase::calculateAngle(double size, double distance)
+{
+	double radtheta, degtheta;
+	radtheta = 2.0 * atan2(size / 2.0, distance);
+	degtheta = (180 * radtheta) / M_PI;
+	return degtheta;
 }

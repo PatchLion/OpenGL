@@ -52,6 +52,8 @@ namespace LearnOpenGL
 		bool isShowCoordinates() const  { return m_bShowCoor; }
 		void setShowCoordinates(bool show);
 
+		//º∆À„ ”“∞
+		double calculateAngle(double size, double distance);
 
 	protected:
 		ProjectionType projectionType() const { return m_projectionType; }

@@ -159,6 +159,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BuffersTest.cpp" />
+    <ClCompile Include="DrawChangeGroup.cpp" />
+    <ClCompile Include="DrawCilp3_5.cpp" />
     <ClCompile Include="DrawCircle.cpp" />
     <ClCompile Include="DrawIcosahedron.cpp" />
     <ClCompile Include="DrawIcosahedronEx.cpp" />
@@ -240,6 +242,8 @@
   <ItemGroup>
     <ClInclude Include="BuffersTest.h" />
     <ClInclude Include="Color3DObject.h" />
+    <ClInclude Include="DrawChangeGroup.h" />
+    <ClInclude Include="DrawCilp3_5.h" />
     <ClInclude Include="DrawCircle.h" />
     <ClInclude Include="DrawIcosahedron.h" />
     <ClInclude Include="DrawIcosahedronEx.h" />
