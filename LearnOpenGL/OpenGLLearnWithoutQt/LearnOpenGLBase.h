@@ -71,6 +71,13 @@ namespace LearnOpenGL
 		virtual void mouseMoveEvent(int x, int y){}
 		virtual void keyPressedEvent(unsigned char key, int x, int y);
 
+		//快捷参数值，通过0~9增加对应的值，Shift+0~9减少值（增加或减少都是按步长） 
+		double value(int index) const;
+		void setValue(int index, double value);
+		double valueStep(int index) const;
+		void setValueStep(int index, double step);
+		void resetValueAndStep();
+
 	public:
 		static void s_display();
 		static void s_idle();
@@ -89,6 +96,10 @@ namespace LearnOpenGL
 		ProjectionType			m_projectionType;
 
 		int							m_yAngle;
+
+		//快捷键0-9 代表的值和增减步长
+		double			m_indexToValue[10];
+		double			m_indexToStep[10];
 	};
 }
 #endif // LearnOpenGLBase_h__

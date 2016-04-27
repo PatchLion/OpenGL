@@ -66,6 +66,7 @@ LearnOpenGL::CLearnOpenGLBase::CLearnOpenGLBase()
 	, m_yAngle(0)
 	, m_bShowCoor(true)
 {
+	resetValueAndStep();
 }
 
 LearnOpenGL::CLearnOpenGLBase::~CLearnOpenGLBase()
@@ -78,17 +79,20 @@ void LearnOpenGL::CLearnOpenGLBase::init()
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 
 	glEnable(GL_DEPTH_TEST);
+
+	//glShadeModel(GL_SMOOTH);
 }
 
 void LearnOpenGL::CLearnOpenGLBase::resizeEvent(int w, int h)
 {
+
 	m_currentWidth = w;
 	m_currentHeight = h;
 	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
-	changeProjectionType(projectionType());
+	changeProjectionType(projectionType());	
 }
 
 void LearnOpenGL::CLearnOpenGLBase::displayEvent()
@@ -98,6 +102,7 @@ void LearnOpenGL::CLearnOpenGLBase::displayEvent()
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
+
 	switch (projectionType())
 	{
 	case LearnOpenGL::CLearnOpenGLBase::Perspective:
@@ -148,53 +153,95 @@ void LearnOpenGL::CLearnOpenGLBase::changeProjectionType(ProjectionType val)
 	break;
 	case LearnOpenGL::CLearnOpenGLBase::Ortho:
 	{
-		glOrtho(-2, 2, -2, 2, 1, 10);
+		//glOrtho(-2, 2, -2, 2, 1, 10);
+		if (width() <= height())
+		{
+			glOrtho(-2, 2, -2, 2 * (GLfloat)height() / (GLfloat)width(), 1, 10);
+		}
+		else
+		{
+			glOrtho(-2, 2 * (GLfloat)width() / (GLfloat)height(), -2, 2, 1, 10);
+		}
 	}
 		break;
 	case LearnOpenGL::CLearnOpenGLBase::Ortho2D:
 	{
-		gluOrtho2D(-2, 2, -2, 2);
+		if (width()<= height())
+		{
+			gluOrtho2D(-2, 2, -2, 2 * (GLfloat)height() / (GLfloat)width());
+		}
+		else
+		{
+			gluOrtho2D(-2, 2 * (GLfloat)width() / (GLfloat)height(), -2, 2);
+		}
 	}
 		break;
 	}
-
 
 }
 
 void LearnOpenGL::CLearnOpenGLBase::keyPressedEvent(unsigned char key, int x, int y)
 {
-	printf("Key pressed: %d(%d, %d)\n", key, x, y);
+	//printf("Key pressed: %d(%d, %d)\n", key, x, y);
 
-	if (91 == key)//[
+	if ('[' == key)//[
 	{
-		m_yAngle += 5;
-	}
-	else if (93 == key)//]
-	{
+		printf("Current y angle = %d\n", m_yAngle);
 		m_yAngle -= 5;
 	}
-	else if (49 == key)//1
+	else if (']' == key)//]
+	{
+		m_yAngle += 5;
+		printf("Current y angle = %d\n", m_yAngle);
+	}
+	else if ('q' == key)//q
 	{
 		changeProjectionType(Perspective);
+		printf("->Perspective\n");
 	}
-	else if (50 == key)//2
+	else if ('w' == key)//w
 	{
 		changeProjectionType(Ortho);
+		printf("->Ortho\n");
 	}
-	else if (51 == key)//3
+	else if ('e' == key)//e
 	{
 		changeProjectionType(Ortho2D);
+		printf("->Ortho2D\n");
 	}
-	else if (99 == key)//c
+	else if ('s' == key)//s
 	{
 		//隐藏显示坐标系
 		setShowCoordinates(!isShowCoordinates());
+
+		printf("Show coordinates: %s\n", (isShowCoordinates() ? "true" : "false"));
 	}
-	else if (114 == key)//r
+	else if ('r' == key)//r
 	{
 		//重置
 		m_yAngle = 0;
+		printf("Current y angle = %d\n", m_yAngle);
 	}
+	else if ('0' <= key && key <= '9')
+	{
+		//增加值
+		int index = key - '0';
+		m_indexToValue[index] += m_indexToStep[index];
+		printf("Value[%d] = %f\n", index, m_indexToValue[index]);
+	}
+	char reduceKeys[10] = { ')', '!', '@', '#', '$', '%', '^', '&', '*', '(' };
+
+	for (int i = 0; i < 10; i++)
+	{
+		//减少值
+		if (reduceKeys[i] == key) //shift + 0
+		{
+			m_indexToValue[i] -= m_indexToStep[i];
+			printf("Value[%d] = %f\n", i, m_indexToValue[i]);
+			break;
+		}
+	}
+
 	glutPostRedisplay();
 }
 
@@ -210,4 +257,49 @@ double LearnOpenGL::CLearnOpenGLBase::calculateAngle(double size, double distanc
 	radtheta = 2.0 * atan2(size / 2.0, distance);
 	degtheta = (180 * radtheta) / M_PI;
 	return degtheta;
+}
+
+double LearnOpenGL::CLearnOpenGLBase::value(int index) const
+{
+	if (index < 0 || index > 9)
+	{
+		return 0.0;
+	}
+	return m_indexToValue[index];
+}
+
+double LearnOpenGL::CLearnOpenGLBase::valueStep(int index) const
+{
+	if (index < 0 || index > 9)
+	{
+		return 0.0;
+	}
+	return m_indexToStep[index];
+}
+
+void LearnOpenGL::CLearnOpenGLBase::setValueStep(int index, double step)
+{
+	if (index < 0 || index > 9)
+	{
+		return;
+	}
+	m_indexToStep[index] = step;
+}
+
+void LearnOpenGL::CLearnOpenGLBase::setValue(int index, double value)
+{
+	if (index < 0 || index > 9)
+	{
+		return;
+	}
+	m_indexToValue[index] = value;
+}
+
+void LearnOpenGL::CLearnOpenGLBase::resetValueAndStep()
+{
+	for (int i = 0; i < 10; i++)
+	{
+		m_indexToValue[i] = 0.0;
+		m_indexToStep[i] = 1.0;
+	}
 }

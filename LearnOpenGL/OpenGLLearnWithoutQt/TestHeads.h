@@ -25,5 +25,10 @@
 #include "DrawIcosahedronEx.h"
 #include "DrawCilp3_5.h"
 #include "DrawChangeGroup.h"
-#define CURRENT_CLASS CDrawChangeGroup
+#include "UnprojectTest.h"
+#include "SmoothModeTest.h"
+#include "Light5_1.h"
+#include "Light5_7.h"
+#include "LightModelTest.h"
+#define CURRENT_CLASS CLightModelTest
 #endif // TestHeads_h__

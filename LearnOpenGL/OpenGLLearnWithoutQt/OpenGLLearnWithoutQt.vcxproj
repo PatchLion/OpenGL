@@ -167,6 +167,9 @@
     <ClCompile Include="DrawIcosahedronWithVertexArray.cpp" />
     <ClCompile Include="DrawSunAndPlanet.cpp" />
     <ClCompile Include="LearnOpenGLBase.cpp" />
+    <ClCompile Include="Light5_1.cpp" />
+    <ClCompile Include="Light5_7.cpp" />
+    <ClCompile Include="LightModelTest.cpp" />
     <ClCompile Include="LoadShaders.cpp" />
     <ClCompile Include="main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -175,6 +178,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="PrimrestartTest.cpp" />
+    <ClCompile Include="SmoothModeTest.cpp" />
+    <ClCompile Include="UnprojectTest.cpp" />
     <ClCompile Include="VAO2_81.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -257,14 +262,19 @@
     <ClInclude Include="DrawVertex.h" />
     <ClInclude Include="Example.h" />
     <ClInclude Include="LearnOpenGLBase.h" />
+    <ClInclude Include="Light5_1.h" />
+    <ClInclude Include="Light5_7.h" />
+    <ClInclude Include="LightModelTest.h" />
     <ClInclude Include="LoadShaders.h" />
     <ClInclude Include="macors.h" />
     <ClInclude Include="MatrixTest.h" />
     <ClInclude Include="PrimrestartTest.h" />
     <ClInclude Include="RunWithAnimation.h" />
+    <ClInclude Include="SmoothModeTest.h" />
     <ClInclude Include="StatusManage.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TestHeads.h" />
+    <ClInclude Include="UnprojectTest.h" />
     <ClInclude Include="VAO2_81.h" />
     <ClInclude Include="VertexArrayTest.h" />
   </ItemGroup>

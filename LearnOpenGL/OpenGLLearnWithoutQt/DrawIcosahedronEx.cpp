@@ -84,7 +84,6 @@ void subDivide(GLfloat *v1, GLfloat *v2, GLfloat *v3, long depth)
 	subDivide(v3, v31, v23, depth - 1);
 	glColor3f(1.0, 0.0, 1.0);
 	subDivide(v12, v23, v31, depth - 1);
-
 }
 
 

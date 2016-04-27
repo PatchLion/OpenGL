@@ -60,6 +60,21 @@
     <ClCompile Include="DrawChangeGroup.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="UnprojectTest.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SmoothModeTest.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Light5_1.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Light5_7.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="LightModelTest.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -149,6 +164,21 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="DrawChangeGroup.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="UnprojectTest.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SmoothModeTest.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Light5_1.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Light5_7.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="LightModelTest.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>
