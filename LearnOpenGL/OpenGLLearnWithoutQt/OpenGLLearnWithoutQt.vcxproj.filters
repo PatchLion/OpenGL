@@ -75,6 +75,27 @@
     <ClCompile Include="LightModelTest.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="Blendeqn6_1.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="BlendAlpha3D6_3.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Aargb6_4.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Aaindex6_5.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Multisamp6_6.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="AargbPolygon.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Fog6_7.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -179,6 +200,27 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="LightModelTest.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Blendeqn6_1.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BlendAlpha3D6_3.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Aargb6_4.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Aaindex6_5.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Multisamp6_6.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AargbPolygon.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Fog6_7.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

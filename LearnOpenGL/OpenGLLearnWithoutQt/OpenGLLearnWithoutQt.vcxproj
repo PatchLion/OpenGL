@@ -158,6 +158,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Aaindex6_5.cpp" />
+    <ClCompile Include="Aargb6_4.cpp" />
+    <ClCompile Include="AargbPolygon.cpp" />
+    <ClCompile Include="BlendAlpha3D6_3.cpp" />
+    <ClCompile Include="Blendeqn6_1.cpp" />
     <ClCompile Include="BuffersTest.cpp" />
     <ClCompile Include="DrawChangeGroup.cpp" />
     <ClCompile Include="DrawCilp3_5.cpp" />
@@ -166,6 +171,7 @@
     <ClCompile Include="DrawIcosahedronEx.cpp" />
     <ClCompile Include="DrawIcosahedronWithVertexArray.cpp" />
     <ClCompile Include="DrawSunAndPlanet.cpp" />
+    <ClCompile Include="Fog6_7.cpp" />
     <ClCompile Include="LearnOpenGLBase.cpp" />
     <ClCompile Include="Light5_1.cpp" />
     <ClCompile Include="Light5_7.cpp" />
@@ -177,6 +183,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Multisamp6_6.cpp" />
     <ClCompile Include="PrimrestartTest.cpp" />
     <ClCompile Include="SmoothModeTest.cpp" />
     <ClCompile Include="UnprojectTest.cpp" />
@@ -245,6 +252,11 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Aaindex6_5.h" />
+    <ClInclude Include="Aargb6_4.h" />
+    <ClInclude Include="AargbPolygon.h" />
+    <ClInclude Include="BlendAlpha3D6_3.h" />
+    <ClInclude Include="Blendeqn6_1.h" />
     <ClInclude Include="BuffersTest.h" />
     <ClInclude Include="Color3DObject.h" />
     <ClInclude Include="DrawChangeGroup.h" />
@@ -261,6 +273,7 @@
     <ClInclude Include="DrawSunAndPlanet.h" />
     <ClInclude Include="DrawVertex.h" />
     <ClInclude Include="Example.h" />
+    <ClInclude Include="Fog6_7.h" />
     <ClInclude Include="LearnOpenGLBase.h" />
     <ClInclude Include="Light5_1.h" />
     <ClInclude Include="Light5_7.h" />
@@ -268,6 +281,7 @@
     <ClInclude Include="LoadShaders.h" />
     <ClInclude Include="macors.h" />
     <ClInclude Include="MatrixTest.h" />
+    <ClInclude Include="Multisamp6_6.h" />
     <ClInclude Include="PrimrestartTest.h" />
     <ClInclude Include="RunWithAnimation.h" />
     <ClInclude Include="SmoothModeTest.h" />

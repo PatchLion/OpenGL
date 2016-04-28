@@ -59,6 +59,14 @@ void LearnOpenGL::CLearnOpenGLBase::s_keyPressed(unsigned char key, int x, int y
 	}
 }
 
+void LearnOpenGL::CLearnOpenGLBase::s_mouseWheel(int button, int dir, int x, int y)
+{
+	if (CLearnOpenGLBase::current)
+	{
+		CLearnOpenGLBase::current->mouseWheelEvent(button, dir, x, y);
+	}
+}
+
 LearnOpenGL::CLearnOpenGLBase::CLearnOpenGLBase()
 	: m_projectionType(Ortho)
 	, m_currentWidth(0)
@@ -66,7 +74,8 @@ LearnOpenGL::CLearnOpenGLBase::CLearnOpenGLBase()
 	, m_yAngle(0)
 	, m_bShowCoor(true)
 {
-	resetValueAndStep();
+	resetDefaultValueToZero();
+	resetValueAndStepToDefault();
 }
 
 LearnOpenGL::CLearnOpenGLBase::~CLearnOpenGLBase()
@@ -134,6 +143,7 @@ void LearnOpenGL::CLearnOpenGLBase::displayEvent()
 		break;
 	}
 
+	glColor3f(1.0, 1.0, 1.0);
 }
 
 void LearnOpenGL::CLearnOpenGLBase::changeProjectionType(ProjectionType val)
@@ -147,7 +157,7 @@ void LearnOpenGL::CLearnOpenGLBase::changeProjectionType(ProjectionType val)
 	{
 	case LearnOpenGL::CLearnOpenGLBase::Perspective:
 	{
-		gluPerspective(90, ratio, 1, 10);
+		gluPerspective(90, ratio, 1, 1000);
 
 	}
 	break;
@@ -218,6 +228,8 @@ void LearnOpenGL::CLearnOpenGLBase::keyPressedEvent(unsigned char key, int x, in
 	}
 	else if ('r' == key)//r
 	{
+		resetValueAndStepToDefault();
+
 		//ÖØÖÃ
 		m_yAngle = 0;
 		printf("Current y angle = %d\n", m_yAngle);
@@ -286,20 +298,34 @@ void LearnOpenGL::CLearnOpenGLBase::setValueStep(int index, double step)
 	m_indexToStep[index] = step;
 }
 
-void LearnOpenGL::CLearnOpenGLBase::setValue(int index, double value)
+void LearnOpenGL::CLearnOpenGLBase::setDefaultValue(int index, double value)
 {
 	if (index < 0 || index > 9)
 	{
 		return;
 	}
-	m_indexToValue[index] = value;
+	m_indexToValue[index] = m_indexToDefaultValue[index] = value;
+	
 }
 
-void LearnOpenGL::CLearnOpenGLBase::resetValueAndStep()
+void LearnOpenGL::CLearnOpenGLBase::resetValueAndStepToDefault()
 {
 	for (int i = 0; i < 10; i++)
 	{
-		m_indexToValue[i] = 0.0;
+		m_indexToValue[i] = m_indexToDefaultValue[i];
 		m_indexToStep[i] = 1.0;
 	}
+}
+
+void LearnOpenGL::CLearnOpenGLBase::resetDefaultValueToZero()
+{
+	for (int i = 0; i < 10; i++)
+	{
+		m_indexToDefaultValue[i] = m_indexToValue[i] = 0;
+	}
+}
+
+void LearnOpenGL::CLearnOpenGLBase::mouseWheelEvent(int button, int dir, int x, int y)
+{
+	//printf("mouseWheelEvent: %d, %d, %d, %d\n", button, dir, x, y);
 }

@@ -30,5 +30,13 @@
 #include "Light5_1.h"
 #include "Light5_7.h"
 #include "LightModelTest.h"
-#define CURRENT_CLASS CLightModelTest
+#include "Blendeqn6_1.h"
+#include "BlendAlpha3D6_3.h"
+#include "Aargb6_4.h"
+#include "Aaindex6_5.h"
+#include "Multisamp6_6.h"
+#include "AargbPolygon.h"
+#include "Fog6_7.h"
+
+#define CURRENT_CLASS CFog6_7
 #endif // TestHeads_h__

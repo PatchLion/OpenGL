@@ -47,6 +47,7 @@ int main(int argc, char** argv)
 		glutIdleFunc(&LearnOpenGL::CLearnOpenGLBase::s_idle);
 		glutDisplayFunc(&LearnOpenGL::CLearnOpenGLBase::s_display);
 		glutPassiveMotionFunc(&LearnOpenGL::CLearnOpenGLBase::s_mouseMove);
+		glutMouseWheelFunc(&LearnOpenGL::CLearnOpenGLBase::s_mouseWheel);
 	}
 
 	glutMainLoop();
