@@ -313,7 +313,7 @@ void LearnOpenGL::CLearnOpenGLBase::resetValueAndStepToDefault()
 	for (int i = 0; i < 10; i++)
 	{
 		m_indexToValue[i] = m_indexToDefaultValue[i];
-		m_indexToStep[i] = 1.0;
+		//m_indexToStep[i] = 1.0;
 	}
 }
 

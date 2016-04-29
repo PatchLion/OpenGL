@@ -96,6 +96,21 @@
     <ClCompile Include="Fog6_7.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="FogCoord6_9.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PointP6_10.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PolyOff6_11.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayList7_1.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawF8_1.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -221,6 +236,21 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="Fog6_7.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="FogCoord6_9.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PointP6_10.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PolyOff6_11.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayList7_1.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawF8_1.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

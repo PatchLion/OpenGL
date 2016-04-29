@@ -37,6 +37,10 @@
 #include "Multisamp6_6.h"
 #include "AargbPolygon.h"
 #include "Fog6_7.h"
-
-#define CURRENT_CLASS CFog6_7
+#include "FogCoord6_9.h"
+#include "PointP6_10.h"
+#include "PolyOff6_11.h"
+#include "DisplayList7_1.h"
+#include "DrawF8_1.h"
+#define CURRENT_CLASS CDrawF8_1
 #endif // TestHeads_h__
