@@ -111,6 +111,18 @@
     <ClCompile Include="DrawF8_1.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="HierarchicalDisplayList7_3.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayList7_9.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawFont8_2.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawPixels8_3.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -251,6 +263,18 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="DrawF8_1.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="HierarchicalDisplayList7_3.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayList7_9.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawFont8_2.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPixels8_3.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

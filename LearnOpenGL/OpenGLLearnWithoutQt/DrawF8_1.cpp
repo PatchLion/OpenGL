@@ -14,6 +14,8 @@ void CDrawF8_1::displayEvent()
 {
 	CLearnOpenGLBase::displayEvent();
 
+	glPushMatrix();
+	glWindowPos3d(3, 3, 0);
 	GLubyte rasters[24] = {
 		0xc0, 0x00, 0xc0, 0x00, 0xc0, 0x00,
 		0xc0, 0x00, 0xc0, 0x00, 0xff, 0x00,
@@ -25,6 +27,7 @@ void CDrawF8_1::displayEvent()
 	glBitmap(10, 12, 0.0, 0.0, 11, 0.0, rasters);
 	glBitmap(10, 12, 0.0, 0.0, 11, 0.0, rasters);
 
+	glPopMatrix();
 
 	glutSwapBuffers();
 }
@@ -35,7 +38,8 @@ void CDrawF8_1::init()
 
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
-	//glRasterPos3i(0, 0, -2);
+	glColor3f(1.0, 0.0, 0.0);
+	//glRasterPos3i(0, 0, -0.1);
 	glWindowPos3d(3, 3, 0);
 
 	GLfloat pos[4];

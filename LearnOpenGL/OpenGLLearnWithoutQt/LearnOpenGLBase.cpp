@@ -74,7 +74,7 @@ LearnOpenGL::CLearnOpenGLBase::CLearnOpenGLBase()
 	, m_yAngle(0)
 	, m_bShowCoor(true)
 {
-	resetDefaultValueToZero();
+	resetAllValue();
 	resetValueAndStepToDefault();
 }
 
@@ -313,15 +313,15 @@ void LearnOpenGL::CLearnOpenGLBase::resetValueAndStepToDefault()
 	for (int i = 0; i < 10; i++)
 	{
 		m_indexToValue[i] = m_indexToDefaultValue[i];
-		//m_indexToStep[i] = 1.0;
 	}
 }
 
-void LearnOpenGL::CLearnOpenGLBase::resetDefaultValueToZero()
+void LearnOpenGL::CLearnOpenGLBase::resetAllValue()
 {
 	for (int i = 0; i < 10; i++)
 	{
 		m_indexToDefaultValue[i] = m_indexToValue[i] = 0;
+		m_indexToStep[i] = 1.0;
 	}
 }
 

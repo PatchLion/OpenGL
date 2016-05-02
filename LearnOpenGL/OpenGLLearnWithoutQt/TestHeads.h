@@ -42,5 +42,10 @@
 #include "PolyOff6_11.h"
 #include "DisplayList7_1.h"
 #include "DrawF8_1.h"
-#define CURRENT_CLASS CDrawF8_1
+#include "HierarchicalDisplayList7_3.h"
+#include "DisplayList7_9.h"
+#include "DrawFont8_2.h"
+#include "DrawPixels8_3.h"
+
+#define CURRENT_CLASS CDrawPixels8_3
 #endif // TestHeads_h__

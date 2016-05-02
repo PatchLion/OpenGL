@@ -78,7 +78,7 @@ namespace LearnOpenGL
 		double valueStep(int index) const;
 		void setValueStep(int index, double step);
 		void resetValueAndStepToDefault();
-		void resetDefaultValueToZero();
+		void resetAllValue();
 
 	public:
 		static void s_display();
