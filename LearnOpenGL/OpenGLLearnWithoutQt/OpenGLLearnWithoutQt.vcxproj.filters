@@ -123,6 +123,12 @@
     <ClCompile Include="DrawPixels8_3.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="DrawPixels8_4.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawChecker9_1.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="triangles.frag">
@@ -275,6 +281,15 @@
       <Filter>classes</Filter>
     </ClInclude>
     <ClInclude Include="DrawPixels8_3.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPixels8_4.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelOper_SingleBuffer.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawChecker9_1.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

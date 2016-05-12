@@ -28,7 +28,7 @@ namespace LearnOpenGL
 		};
 
 	public:
-		CLearnOpenGLBase();
+		CLearnOpenGLBase(bool doubleBuffer = true);
 		~CLearnOpenGLBase();
 
 	public:
@@ -54,6 +54,12 @@ namespace LearnOpenGL
 
 		//计算视野
 		double calculateAngle(double size, double distance);
+
+		//
+		bool isDoubleBuffer() const { return m_bIsDoubleBuffer; }
+
+		//
+		void flush();
 
 	protected:
 		ProjectionType projectionType() const { return m_projectionType; }
@@ -104,6 +110,9 @@ namespace LearnOpenGL
 		double			m_indexToDefaultValue[10];
 		double			m_indexToValue[10];
 		double			m_indexToStep[10];
+
+
+		bool				m_bIsDoubleBuffer;//使用双缓存 默认：是
 	};
 }
 #endif // LearnOpenGLBase_h__

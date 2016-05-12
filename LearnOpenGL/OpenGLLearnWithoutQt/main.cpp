@@ -4,7 +4,6 @@
 
 int main(int argc, char** argv)
 {
-	
 	printf("---------------默认快捷键(如果子类没有重定义的话)----------\n");
 	printf("[ : 绕-y轴旋转坐标系\n");
 	printf("] : 绕y轴旋转坐标系\n");
@@ -18,7 +17,6 @@ int main(int argc, char** argv)
 	printf("---------------------------------------------------------------------\n");
 
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 
 	glutInitWindowPosition(700, 200);
 	glutInitWindowSize(500, 500);
@@ -27,8 +25,6 @@ int main(int argc, char** argv)
 
 	cout << glGetString(GL_VERSION) << endl;
 	cout << glGetString(GL_RENDERER) << endl;
-
-	glClearColor(0.0, 0.0, 0.0, 0.0);
 
 	if (GLEW_OK != glewInit())
 	{
@@ -40,7 +36,7 @@ int main(int argc, char** argv)
 		//实例化一个对象
 		LearnOpenGL::CLearnOpenGLBase::registToCurrent<CURRENT_CLASS>();
 
-		glutMotionFunc(&LearnOpenGL::CLearnOpenGLBase::s_mousePressedMove);
+		glutMotionFunc(&LearnOpenGL::CLearnOpenGLBase::s_mousePressedMove); 
 		glutKeyboardFunc(&LearnOpenGL::CLearnOpenGLBase::s_keyPressed);
 		glutMouseFunc(&LearnOpenGL::CLearnOpenGLBase::s_mouse);
 		glutReshapeFunc(&LearnOpenGL::CLearnOpenGLBase::s_resize);

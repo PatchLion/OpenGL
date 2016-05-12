@@ -46,6 +46,7 @@
 #include "DisplayList7_9.h"
 #include "DrawFont8_2.h"
 #include "DrawPixels8_3.h"
-
-#define CURRENT_CLASS CDrawPixels8_3
+#include "DrawPixels8_4.h"
+#include "DrawChecker9_1.h"
+#define CURRENT_CLASS CDrawChecker9_1
 #endif // TestHeads_h__

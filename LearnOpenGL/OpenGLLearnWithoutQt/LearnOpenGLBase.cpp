@@ -67,12 +67,13 @@ void LearnOpenGL::CLearnOpenGLBase::s_mouseWheel(int button, int dir, int x, int
 	}
 }
 
-LearnOpenGL::CLearnOpenGLBase::CLearnOpenGLBase()
+LearnOpenGL::CLearnOpenGLBase::CLearnOpenGLBase(bool doubleBuffer)
 	: m_projectionType(Ortho)
 	, m_currentWidth(0)
 	, m_currentHeight(0)
 	, m_yAngle(0)
 	, m_bShowCoor(true)
+	, m_bIsDoubleBuffer(doubleBuffer)
 {
 	resetAllValue();
 	resetValueAndStepToDefault();
@@ -88,10 +89,18 @@ void LearnOpenGL::CLearnOpenGLBase::init()
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+	if (isDoubleBuffer())
+	{
+		glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+	}
+	else
+	{
+		glutInitDisplayMode(GLUT_RGB | GLUT_DEPTH);
+	}
+	
 
 	glEnable(GL_DEPTH_TEST);
-
+	
 	//glShadeModel(GL_SMOOTH);
 }
 
@@ -143,7 +152,9 @@ void LearnOpenGL::CLearnOpenGLBase::displayEvent()
 		break;
 	}
 
-	glColor3f(1.0, 1.0, 1.0);
+	//glColor3f(1.0, 1.0, 1.0);
+
+	flush();
 }
 
 void LearnOpenGL::CLearnOpenGLBase::changeProjectionType(ProjectionType val)
@@ -260,7 +271,9 @@ void LearnOpenGL::CLearnOpenGLBase::keyPressedEvent(unsigned char key, int x, in
 void LearnOpenGL::CLearnOpenGLBase::setShowCoordinates(bool show)
 {
 	m_bShowCoor = show;
+
 	glutPostRedisplay();
+	
 }
 
 double LearnOpenGL::CLearnOpenGLBase::calculateAngle(double size, double distance)
@@ -328,4 +341,16 @@ void LearnOpenGL::CLearnOpenGLBase::resetAllValue()
 void LearnOpenGL::CLearnOpenGLBase::mouseWheelEvent(int button, int dir, int x, int y)
 {
 	//printf("mouseWheelEvent: %d, %d, %d, %d\n", button, dir, x, y);
+}
+
+void LearnOpenGL::CLearnOpenGLBase::flush()
+{
+	if (isDoubleBuffer())
+	{
+		glutSwapBuffers();
+	}
+	else
+	{
+		glFlush();
+	}
 }
