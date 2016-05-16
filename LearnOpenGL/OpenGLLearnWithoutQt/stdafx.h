@@ -5,6 +5,7 @@
 #include <gl/freeglut.h>
 #include <iostream>
 #include "macors.h"
+#include "PublicFunctions.h"
 #pragma comment (lib, "glew32.lib")
 using namespace std;
 

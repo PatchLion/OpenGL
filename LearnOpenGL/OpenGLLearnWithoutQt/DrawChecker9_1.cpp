@@ -56,6 +56,7 @@ void CDrawChecker9_1::init()
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, checkImageWidth, checkImageHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, checkImage_2);
 
 	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+
 }
 
 void CDrawChecker9_1::keyPressedEvent(unsigned char key, int x, int y)

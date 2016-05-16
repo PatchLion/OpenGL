@@ -48,5 +48,6 @@
 #include "DrawPixels8_3.h"
 #include "DrawPixels8_4.h"
 #include "DrawChecker9_1.h"
-#define CURRENT_CLASS CDrawChecker9_1
+#include "Texture_MagicCube.h"
+#define CURRENT_CLASS CTexture_MagicCube
 #endif // TestHeads_h__

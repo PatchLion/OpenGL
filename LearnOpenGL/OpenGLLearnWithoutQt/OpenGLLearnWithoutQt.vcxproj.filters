@@ -19,6 +19,9 @@
     <Filter Include="classes">
       <UniqueIdentifier>{99193b6b-b905-42fd-a772-48cd5ea9ceab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="classes\Public">
+      <UniqueIdentifier>{32a81edf-7c0a-4638-946b-87060bfabdc8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -127,6 +130,12 @@
       <Filter>classes</Filter>
     </ClCompile>
     <ClCompile Include="DrawChecker9_1.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicFunctions.cpp">
+      <Filter>classes\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture_MagicCube.cpp">
       <Filter>classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -290,6 +299,15 @@
       <Filter>OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="DrawChecker9_1.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicFunctions.h">
+      <Filter>classes\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture_MagicCube.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Teapot.h">
       <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>

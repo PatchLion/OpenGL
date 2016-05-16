@@ -1,9 +1,10 @@
 #include "stdafx.h"
 
 #include "TestHeads.h"
-
+#include "Teapot.h"
 int main(int argc, char** argv)
 {
+
 	printf("---------------默认快捷键(如果子类没有重定义的话)----------\n");
 	printf("[ : 绕-y轴旋转坐标系\n");
 	printf("] : 绕y轴旋转坐标系\n");

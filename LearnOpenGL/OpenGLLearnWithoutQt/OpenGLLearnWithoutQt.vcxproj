@@ -196,7 +196,9 @@
     <ClCompile Include="PointP6_10.cpp" />
     <ClCompile Include="PolyOff6_11.cpp" />
     <ClCompile Include="PrimrestartTest.cpp" />
+    <ClCompile Include="PublicFunctions.cpp" />
     <ClCompile Include="SmoothModeTest.cpp" />
+    <ClCompile Include="Texture_MagicCube.cpp" />
     <ClCompile Include="UnprojectTest.cpp" />
     <ClCompile Include="VAO2_81.cpp" />
   </ItemGroup>
@@ -306,11 +308,14 @@
     <ClInclude Include="PointP6_10.h" />
     <ClInclude Include="PolyOff6_11.h" />
     <ClInclude Include="PrimrestartTest.h" />
+    <ClInclude Include="PublicFunctions.h" />
     <ClInclude Include="RunWithAnimation.h" />
     <ClInclude Include="SmoothModeTest.h" />
     <ClInclude Include="StatusManage.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Teapot.h" />
     <ClInclude Include="TestHeads.h" />
+    <ClInclude Include="Texture_MagicCube.h" />
     <ClInclude Include="UnprojectTest.h" />
     <ClInclude Include="VAO2_81.h" />
     <ClInclude Include="VertexArrayTest.h" />
